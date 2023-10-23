@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.AddFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/evWord"
+            android:autofillHints="Word"
+            android:hint="Word"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/evTranslation"
+            android:autofillHints="Translation"
+            android:hint="Translation"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/evContext"
+            android:autofillHints="Context"
+            android:hint="Context"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/evContextTranslation"
+            android:autofillHints="Context translation"
+            android:hint="Context translation"
+            android:inputType="text"
+            android:selectAllOnFocus="true"
+            android:padding="@dimen/edit_text_padding"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+        <Button
+            android:id="@+id/btSave"
+            android:text="Save"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</FrameLayout>
